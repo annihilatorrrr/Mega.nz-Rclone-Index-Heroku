@@ -34,99 +34,182 @@ Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing,
 10. Click **Visit** to open your MEGA Cloudflare Index.
 
 
+# 🚀 Heroku MEGA Index (May not Work)
 
+Serve the contents of your **MEGA.nz** account over HTTP using **Heroku** and **rclone**, providing a simple web-based file index.
 
-# HEROKU MEGA INDEX
----------------------
-
-![Demo](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/megaandindex.PNG)
-
-#### Donate me BTC : 1J48LksQNiASuj48nwYATXdFzQSwdrnx7c
-###### heroku-rclone-serve V3
-
-Serves mega.nz to http via heroku web.
-This creates a backdoor for mega storage and serves publicly.
-
-[HEROKU RAPID DEPLOYMENT AVAILABLE](https://developeranaz.github.io/Mega-index-heroku/random.sh) without froking or github account.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/Mega-index-heroku/random.html)
-
-
-Use your Real mega Username/Email and real Password (without encryption) normally. 
-
-##### STAR & FORK MY REPO IF YOU LIKE IT OR FOLLOW ME ON [INSTAGRAM](https://www.instagram.com/t_h_e_anas).
-
-
-### Project completed but still under development
-
-![Demo](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/deployedV.PNG)
-
-------------
-
-## Config Variables in heroku
-
-###### Go to settings of deployed application > reveal Config Vars > Edit Button
-
-### Change Config Vars in settings of deployed application change email and password for swiching accounts
-
-# ![Demo-Deploying](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/newdeploying.PNG)
-
-
-
-I modified some of my older files and added Mega quota bypass.  You use it at your own risk. Four additional environment variables are required for the new feature. Change Variable `Auto_Quota_Bypass` to `true ` to activate Auto-Quota-Bypass Feature
-here [414e629](https://github.com/developeranaz/Mega-index-heroku/commit/414e629ec98bd5f5cb95d05ead1102e0f4db9836)
-
-
-1. `APPNAME`  --> Use Your appname same used in Heroku's webapp. Don't use your app link, Use Heroku's App name. Its optional only if you need auto quota bypass. Your information is secure between you and Heroku.
-2. `Heroku_Password` --> Your Currently deployed/deploying Heroku Password. Its optional only if you need auto quota bypass. Your information is secure between you and Heroku.
-3. `Heroku_Email_Id` --> Your Currently deployed/deploying Heroku Email. Its optional only if you need auto quota bypass. Your information is secure between you and Heroku.
-4. `Auto_Quota_Bypass` --> `true/false` |Use true or false values. Fill your Optional Config Variables if true.
-
-------------
-# Features
-
-* No rclone.conf file needed
-* Added More security
-* MEGA support is available
-* Switch your mega accounts in config vars
-* No internet speed capping ,Enjoy Maximum download speed
-* 24x7 permanent link
-* No download limit or quota limit
-* pause download available (Use download Managers like ADM ,XDM, Aria2 for more stability)
-* Multi-thread support upto 9x (stable)
-
-# Known Issues
-* In some devices ,speed drop was detected. 
-
-Webdav with authentication added [here](https://github.com/bluehypergiant/Mega.nz-rclone-WebDav)
-##### Please use  ‘ADM‘ /‘Aria2 For android‘ OR ‘Aria2 For windows‘ / ‘XDM‘ for best Downloading speed
-
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/Mega-index-heroku/random.html)
-[![Deploy](https://deploy.zeet.co/Mega.nz-Rclone-Index-Heroku.svg)](https://deploy.zeet.co/?url=https://github.com/developeranaz/Mega-index-heroku)
+> **Status:** Maintenance mode (functional, with occasional updates and improvements)
 
 ---
+
+## Preview
+
+![MEGA Index](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/megaandindex.PNG)
+
+---
+
+## One-Click Deployment
+
+Deploy directly to Heroku without forking the repository or creating a GitHub account.
+
+**Quick Deployment:**  
+https://developeranaz.github.io/Mega-index-heroku/random.sh
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/Mega-index-heroku/random.html)
+
+---
+
+## Configuration
+
+After deployment:
+
+**Heroku Dashboard**
+> **Your App → Settings → Reveal Config Vars**
+
+Configure the following variables using your actual MEGA account credentials.
+
+| Variable | Description |
+|----------|-------------|
+| `Email` | Your MEGA account email |
+| `Password` | Your MEGA account password |
+
+> **Note:** Credentials are stored only in your Heroku application's Config Vars.
+
+---
+
+## Auto Quota Bypass (Optional)
+
+A quota bypass feature was added in commit:
+
+https://github.com/developeranaz/Mega-index-heroku/commit/414e629ec98bd5f5cb95d05ead1102e0f4db9836
+
+To enable it, set:
+
+```
+Auto_Quota_Bypass=true
+```
+
+Additional Config Vars required:
+
+| Variable | Description |
+|----------|-------------|
+| `APPNAME` | Your Heroku application name (not the URL) |
+| `Heroku_Email_Id` | Heroku account email |
+| `Heroku_Password` | Heroku account password |
+| `Auto_Quota_Bypass` | `true` or `false` |
+
+These variables are **only required** when using the Auto Quota Bypass feature.
+
+---
+
+## Screenshots
+
+### Deployment
+
+![Deployment](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/newdeploying.PNG)
+
+### Running Instance
+
+![Running](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/deployedV.PNG)
+
+---
+
+# Features
+
+- No `rclone.conf` file required
+- Direct MEGA.nz integration
+- Improved security
+- Easily switch MEGA accounts through Config Vars
+- High-speed downloads (no application speed limiting)
+- Permanent public URL via Heroku
+- Download resume support using download managers
+- Multi-thread downloading (up to 9 connections)
+- Optional automatic MEGA quota bypass
+
+---
+
+# Known Issues
+
+- Download speed may vary depending on the device or network.
+- If deployment fails, simply redeploy the application. Some deployment assets are served from free infrastructure and occasional failures may occur.
+
+---
+
+# Recommended Download Managers
+
+For the best download experience, use:
+
+- ADM (Android)
+- Aria2
+- Aria2 for Android
+- Aria2 for Windows
+- XDM (Xtreme Download Manager)
+
+---
+
+## WebDAV Support
+
+A WebDAV version with authentication is available here:
+
+https://github.com/bluehypergiant/Mega.nz-rclone-WebDav
+
+---
+
+## Deploy
+
+### Heroku
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://developeranaz.github.io/Mega-index-heroku/random.html)
+
+### Zeet
+
+[![Deploy to Zeet](https://deploy.zeet.co/Mega.nz-Rclone-Index-Heroku.svg)](https://deploy.zeet.co/?url=https://github.com/developeranaz/Mega-index-heroku)
+
+---
+
 # Supported Storage
--------------------
-##### MEGA.NZ only
 
-### Create an [issue](https://github.com/developeranaz/Mega.nz-Rclone-Index-Heroku-BETA/issues/new) if you have one
+- ✅ MEGA.nz
 
-##### Please Try to re-deploy if any error occurred, this is common because some of the files are hosted on my free server at cloudflare
+---
 
-![Demo](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/samplemega.PNG)
+# Support
 
-![Demo](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/megaandindex.PNG)
+If you encounter any issues, please open an issue:
+
+https://github.com/developeranaz/Mega.nz-Rclone-Index-Heroku-BETA/issues/new
+
+---
+
+## Additional Screenshots
+
+![Sample](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/samplemega.PNG)
+
+![Index](https://raw.githubusercontent.com/developeranaz/Mega.nz-Rclone-Index-Heroku/main/.example_images/megaandindex.PNG)
+
+---
+
+## Support the Project
+
+If you find this project useful:
+
+- ⭐ Star the repository
+- 🍴 Fork the repository
+- Follow the developer on Instagram:
+  https://www.instagram.com/t_h_e_anas
+
+**Bitcoin Donation**
+
+```
+1J48LksQNiASuj48nwYATXdFzQSwdrnx7c
+```
+
 
 
 
 ### Tutorial of will be published soon
 
-### Donate me 😊
 
-###### Thanks To github.com/rclone/rclone
-
-###### megaindex mega.nz index mega index meganzindex meganz index mega nz mega storage megamount mount gdrive drive mega link pause resume megalink megalinkindex Bhadoo Cloud indexing downloader quota meganzquota bypass mega.nzquata meganz uploader permenant-link index megaquota
 
 <meta name="googlec978fa026335d582.html meganz index mega.nz index meganzindex" content="...">
 <meta name="google-site-verification: googlec978fa026335d582.html" content="...">
