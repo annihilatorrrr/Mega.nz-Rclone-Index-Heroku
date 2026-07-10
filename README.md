@@ -1,3 +1,41 @@
+# 🚀 MEGA.nz to Cloudflare Index
+
+Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing, improved stability, and direct downloads without MEGA's standard transfer quota restrictions.
+
+> **⚠️ Experimental:** This project is still under development and may not work in all situations. Use it at your own risk.
+# 📖 Steps to Use
+
+## Step 1: Generate Your MEGA Index Code
+
+1. Open the **MEGA Index Code Generator**:
+
+   * https://developeranaz.github.io/webapps/mega.nz/
+2. Enter your **MEGA Account Email**.
+3. Enter your **MEGA Account Password**.
+4. Select your preferred **Template Theme**.
+5. Click **Generate Custom `worker.js`**.
+6. Copy or download the generated Cloudflare Worker code.
+
+> **Note:** Disable ad blockers and any browser extensions that block external scripts before generating the code.
+
+---
+
+## Step 2: Deploy to Cloudflare Workers
+
+1. Log in to your **Cloudflare Dashboard**.
+2. Go to **Workers & Pages** → **Create Application**.
+3. Select **Start with Hello World!** → **Get Started**.
+4. Enter a name for your Worker (optional) and click **Deploy**.
+5. After deployment, click **Edit Code** (top-right).
+6. Delete all the default code in `worker.js`.
+7. Paste the generated `worker.js` code.
+8. Click **Deploy**.
+9. Wait a few minutes for deployment to complete.
+10. Click **Visit** to open your MEGA Cloudflare Index.
+
+
+
+
 # HEROKU MEGA INDEX
 ---------------------
 
