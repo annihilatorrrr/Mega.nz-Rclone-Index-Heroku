@@ -271,7 +271,7 @@ async function decryptNode(itm, masterKey) {
       parent: itm.p,
       type: itm.t,
       name: attr.n,
-      size: itm.sz || 0,
+      size: itm.s || 0,
       ts: itm.ts,
       key: key,
       iv: iv
