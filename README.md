@@ -1,4 +1,4 @@
-# 🚀 MEGA.nz to Cloudflare Index (not working- under development)
+# 🚀 MEGA.nz to Cloudflare Index 
 
 Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing, improved stability, and direct downloads without MEGA's standard transfer quota restrictions.
 
@@ -9,7 +9,7 @@ Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing,
 
 1. Open the **MEGA Index Code Generator**:
 
-   * https://developeranaz.github.io/webapps/mega.nz/ <- problem with this link please come back later
+   * https://developeranaz.github.io/webapps/mega.nz/ 
 2. Enter your **MEGA Account Email**.
 3. Enter your **MEGA Account Password**.
 4. Select your preferred **Template Theme**.
