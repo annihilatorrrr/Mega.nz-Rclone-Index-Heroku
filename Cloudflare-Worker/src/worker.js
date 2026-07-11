@@ -91,7 +91,7 @@ async function handleDownload(request, fileHash, sid, masterKey, ctx) {
     "raw", node.key, { name: "AES-CTR" }, false, ["decrypt"]
   );
   const expectedSize = rangeEnd - rangeStart + 1;
-  const CHUNK = 8 * 1024 * 1024; 
+  const CHUNK = 32 * 1024 * 1024; 
   let pos = aesStart;
   const end = rangeEnd;
   const stream = new ReadableStream({
@@ -127,6 +127,8 @@ async function handleDownload(request, fileHash, sid, masterKey, ctx) {
       }
     }
   });
+  const { readable, writable } = new FixedLengthStream(expectedSize);
+  stream.pipeTo(writable).catch(() => {});
   const headers = new Headers({
     "Content-Type": "application/octet-stream",
     "Content-Disposition": `attachment; filename="${encodeURIComponent(node.name)}"`,
@@ -138,7 +140,7 @@ async function handleDownload(request, fileHash, sid, masterKey, ctx) {
     status = 206;
     headers.set("Content-Range", `bytes ${rangeStart}-${rangeEnd}/${fileSize}`);
   }
-  return new Response(stream, { status, headers });
+  return new Response(readable, { status, headers });
 }
 function getCtrIv(metaIv, chkStart) {
   const iv = new Uint8Array(16);
