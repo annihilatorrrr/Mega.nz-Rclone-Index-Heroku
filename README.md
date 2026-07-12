@@ -1,6 +1,7 @@
 # 🚀 MEGA.nz to Cloudflare Index 
 
 Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing, improved stability, and direct downloads without MEGA's standard transfer quota restrictions.
+What's new: Shared link support.
 
 > **⚠️ Experimental:** This project is still under development and may not work in all situations. Use it at your own risk.
 # 📖 Steps to Use
