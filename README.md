@@ -75,9 +75,9 @@ Status Legend:
 ```
 
 
-
+# Heroku MEGA Herondex (Mny not Work)
 `````
-# 🚀 Heroku MEGA Index (May not Work)
+# 🚀 Heroku MEGA Herondex (Mny not Work)
 
 Serve the contents of your **MEGA.nz** account over HTTP using **Heroku** and **rclone**, providing a simple web-based file index.
 
