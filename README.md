@@ -33,6 +33,48 @@ Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing,
 9. Wait a few minutes for deployment to complete.
 10. Click **Visit** to open your MEGA Cloudflare Index.
 
+## 🚀 Performance Test
+
+The worker was tested using **Google Colab** with **aria2** multi-threaded downloading (`-x 13`).
+
+- **Average download speed:** **44 MiB/s**
+- **Multi-threaded connections:** **13**
+- **Large file tested:** **6+ GB**
+- **Result:** The download completed successfully, demonstrating support for downloading very large files.
+
+> **Note:** During multi-threaded downloads, a few connections may report temporary `Got EOF from the server` errors. This is expected with parallel range requests and does not affect the final download, which completes successfully.
+
+```
+07/12 03:07:56 [NOTICE] Downloading 1 item(s)
+
+07/12 03:07:57 [NOTICE] File already exists. Renamed to /content/MEmu-Setup-9.0.3.0-Portable.2.zip.
+
+07/12 03:08:33 [ERROR] CUID#9 - Download aborted. URI=https://x.xxxxxxx.workers.dev/download/xxXxxxx
+Exception: [DownloadCommand.cc:234] errorCode=1 Got EOF from the server.
+
+07/12 03:08:33 [ERROR] CUID#11 - Download aborted. URI=https://x.xxxxxxx.workers.dev/download/xxXxxxx
+Exception: [DownloadCommand.cc:234] errorCode=1 Got EOF from the server.
+
+07/12 03:08:37 [ERROR] CUID#12 - Download aborted. URI=https://x.xxxxxxx.workers.dev/download/xxXxxxx
+Exception: [DownloadCommand.cc:234] errorCode=1 Got EOF from the server.
+
+07/12 03:08:40 [ERROR] CUID#7 - Download aborted. URI=https://x.xxxxxxx.workers.dev/download/xxXxxxx
+Exception: [DownloadCommand.cc:234] errorCode=1 Got EOF from the server.
+
+07/12 03:08:52 [NOTICE] Download complete: /content/MEmu-Setup-9.0.3.0-Portable.2.zip
+
+Download Results:
+gid   |stat|avg speed  |path/URI
+======+====+===========+=======================================================
+8dd329|OK  |    44MiB/s|/content/MEmu-Setup-9.0.3.0-Portable.2.zip
+
+Status Legend:
+(OK):download completed.
+
+```
+
+
+
 
 # 🚀 Heroku MEGA Index (May not Work)
 
