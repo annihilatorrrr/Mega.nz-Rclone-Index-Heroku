@@ -75,7 +75,7 @@ Status Legend:
 ```
 
 
-# Heroku MEGA Herondex (Mny not Work)
+# Heroku MEGA index (May not Work)
 
 `````
 # 🚀 Heroku MEGA Herondex (Mny not Work)
