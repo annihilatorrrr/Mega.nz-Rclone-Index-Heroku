@@ -96,6 +96,25 @@ Then open the local URL Wrangler prints (usually `http://localhost:8787`).
 
 ```
 
+# Additional Deployment Method (Shared Link Only)
+
+Use this method if you only want to access public MEGA shared links and don't need a MEGA account.
+1. Copy the latest `worker.js` from:
+   [**worker.js**](https://raw.githubusercontent.com/developeranaz/MEGA-INDEX-CLOUDFLARE/refs/heads/main/worker.js)
+2. Sign in to your **Cloudflare Dashboard**:
+   [**dash.cloudflare.com**](https://dash.cloudflare.com/)
+3. Go to **Workers & Pages** → **Create Application**.
+4. Select **Start with Hello World!** and click **Get Started**.
+5. Enter a name for your Worker (optional) and click **Deploy**.
+6. After deployment, click **Edit Code**.
+7. Delete the default contents of `worker.js`.
+8. Paste the copied `worker.js` code.
+9. Click **Deploy** to publish the Worker.
+10. Wait a minute for the deployment to finish.
+11. Click **Visit** to open your MEGA Cloudflare Index.
+
+
+
 ## License
 
 Provided as-is for personal use. Respect the terms of service of MEGA and the rights of file owners.
