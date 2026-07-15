@@ -1,0 +1,15 @@
+{
+  "name": "mega-index-cloudflare",
+  "version": "1.0.0",
+  "description": "Index and download files from public mega.nz shared links, served on Cloudflare Workers.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

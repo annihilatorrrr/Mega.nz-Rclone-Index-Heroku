@@ -1,0 +1,6 @@
+name = "mega-index-cloudflare"
+main = "worker.js"
+compatibility_date = "2026-07-15"
+
+# This Worker indexes public mega.nz shared links only.
+# No account credentials / secrets are required to run it.
