@@ -4,10 +4,14 @@ Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing,
 What's new: Shared link support.
 ## 🚀 One-click deploy
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/developeranaz/MEGA-INDEX-CLOUDFLARE)
 > **⚠️ Experimental:** This project is still under development and may not work in all situations. Use it at your own risk.
-# 📖 Steps to Use
+# 📖 Steps to Use 
+Two deployment modes are available:
 
+1. Mega Shared Link + Account mode
+2. Mega Shared Link only mode (no account required)
+
+# Method 1: Mega Shared Link + Account mode
 ## Step 1: Generate Your MEGA Index Code
 
 1. Open the **MEGA Index Code Generator**:
@@ -35,6 +39,67 @@ What's new: Shared link support.
 8. Click **Deploy**.
 9. Wait a few minutes for deployment to complete.
 10. Click **Visit** to open your MEGA Cloudflare Index.
+
+
+---
+# Method 2: Mega Shared Link only mode (no account required)
+
+## 🚀 One-click deploy
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/developeranaz/MEGA-INDEX-CLOUDFLARE)
+
+Clicking the button will:
+
+1. Clone this repository into your own GitHub account.
+2. Let you pick a Worker name and confirm settings.
+3. Build and deploy it to your Cloudflare account automatically.
+
+No environment variables or secrets are needed — it works out of the box.
+
+> **Note:** For the button to work, this repository must be **public** on GitHub.
+
+## What it does
+
+- **Landing page** at `/` — paste any public mega.nz link to index it.
+- **Folder links** (`https://mega.nz/folder/HANDLE#KEY`) → a browsable file index.
+- **File links** (`https://mega.nz/file/HANDLE#KEY`) → an index page showing the file name and size, with a download button.
+- Streams downloads directly through the Worker with HTTP range support (resumable / multi-threaded download friendly).
+
+## Manual deploy (alternative)
+
+If you'd rather deploy from your own machine:
+
+```bash
+npm install
+npx wrangler login
+npx wrangler deploy
+```
+
+Requires [Node.js](https://nodejs.org) and a Cloudflare account.
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the local URL Wrangler prints (usually `http://localhost:8787`).
+
+## Project structure
+
+```
+.
+├── worker.js        # The Cloudflare Worker (all app logic + UI)
+├── wrangler.toml    # Worker configuration (name, entry point, compat date)
+└──  package.json     # Scripts and Wrangler dependency
+
+```
+
+## License
+
+Provided as-is for personal use. Respect the terms of service of MEGA and the rights of file owners.
+
 
 ## 🚀 Performance Test
 
