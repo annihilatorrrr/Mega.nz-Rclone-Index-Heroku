@@ -2,6 +2,8 @@
 
 Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing, improved stability, and direct downloads without MEGA's standard transfer quota restrictions.
 What's new: Shared link support.
+
+
 ![Performance Test](.example_images/Screenshot%202026-07-15%20230134.png)
 
 ![Performance Test](.example_images/Screenshot%202026-07-15%20230740.png)
