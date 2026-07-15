@@ -2,7 +2,9 @@
 
 Index your **MEGA.nz** account using **Cloudflare Workers** for faster browsing, improved stability, and direct downloads without MEGA's standard transfer quota restrictions.
 What's new: Shared link support.
+## 🚀 One-click deploy
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/developeranaz/MEGA-INDEX-CLOUDFLARE)
 > **⚠️ Experimental:** This project is still under development and may not work in all situations. Use it at your own risk.
 # 📖 Steps to Use
 
