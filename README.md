@@ -16,16 +16,19 @@ Two deployment modes are available:
 2. Mega Shared Link only mode (no account required)
 
 # Method 1: Mega Shared Link + Account mode
+
+tutorial: https://youtu.be/vQRtRk5JFqA
+
 ## Step 1: Generate Your MEGA Index Code
 
 1. Open the **MEGA Index Code Generator**:
 
    * https://developeranaz.github.io/webapps/mega.nz/ 
-2. Enter your **MEGA Account Email**.
-3. Enter your **MEGA Account Password**.
-4. Select your preferred **Template Theme**.
-5. Click **Generate Custom `worker.js`**.
-6. Copy or download the generated Cloudflare Worker code.
+3. Enter your **MEGA Account Email**.
+4. Enter your **MEGA Account Password**.
+5. Select your preferred **Template Theme**.
+6. Click **Generate Custom `worker.js`**.
+7. Copy or download the generated Cloudflare Worker code.
 
 > **Note:** Disable ad blockers and any browser extensions that block external scripts before generating the code.
 
@@ -102,6 +105,7 @@ Then open the local URL Wrangler prints (usually `http://localhost:8787`).
 
 # Additional Deployment Method (Shared Link Only)
 
+tutorial: https://youtu.be/5zfjZs_8gLQ?si=teAjbtEK1rtRBUpt
 Use this method if you only want to access public MEGA shared links and don't need a MEGA account.
 1. Copy the latest `worker.js` from:
    [**worker.js**](https://raw.githubusercontent.com/developeranaz/MEGA-INDEX-CLOUDFLARE/refs/heads/main/worker.js)
