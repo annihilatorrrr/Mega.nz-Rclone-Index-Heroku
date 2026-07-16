@@ -12,12 +12,11 @@ What's new: Shared link support.
 # 📖 Steps to Use 
 Two deployment modes are available:
 
-1. Mega Shared Link + Account mode
-2. Mega Shared Link only mode (no account required)
+1. Mega Shared Link + Account mode https://youtu.be/mod
+2. Mega Shared Link only mode (no account required) https://youtu.be/mode
 
 # Method 1: Mega Shared Link + Account mode
 
-tutorial: https://youtu.be/vQRtRk5JFqA
 
 ## Step 1: Generate Your MEGA Index Code
 
