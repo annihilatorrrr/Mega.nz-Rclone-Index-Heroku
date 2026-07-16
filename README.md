@@ -106,6 +106,7 @@ Then open the local URL Wrangler prints (usually `http://localhost:8787`).
 # Additional Deployment Method (Shared Link Only)
 
 tutorial: https://youtu.be/5zfjZs_8gLQ?si=teAjbtEK1rtRBUpt
+
 Use this method if you only want to access public MEGA shared links and don't need a MEGA account.
 1. Copy the latest `worker.js` from:
    [**worker.js**](https://raw.githubusercontent.com/developeranaz/MEGA-INDEX-CLOUDFLARE/refs/heads/main/worker.js)
