@@ -12,9 +12,9 @@ What's new: Shared link support.
 # 📖 Steps to Use 
 Two deployment modes are available:
 
-1. Mega Shared Link + Account mode https://youtu.be/5zfjZs_8gLQ
-2. Mega Shared Link only mode (no account required) https://youtu.be/vQRtRk5JFqA
-
+1. Mega Shared Link + Account mode https://youtu.be/vQRtRk5JFqA 
+2. Mega Shared Link only mode (no account required) 
+https://youtu.be/5zfjZs_8gLQ
 # Method 1: Mega Shared Link + Account mode
 
 
